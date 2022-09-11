@@ -7,4 +7,5 @@ import './style/scss/style.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
-document.writeln("Hello World");
+const sayHello = () => document.writeln("Hello World");
+sayHello();
