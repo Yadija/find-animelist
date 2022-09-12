@@ -1,6 +1,3 @@
-// import css
-import "./style/css/style.css"
-
 // Import our custom CSS
 import './style/scss/style.scss'
 
@@ -8,4 +5,4 @@ import './style/scss/style.scss'
 import * as bootstrap from 'bootstrap'
 
 const sayHello = () => document.writeln("Hello World");
-sayHello();
+// sayHello();
