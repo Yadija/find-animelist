@@ -1,3 +1,5 @@
 # Find AnimeList
 
-Web untuk mencari anime/manga berdasarkan search
+Web untuk mencari anime/manga berdasarkan pencarian
+
+sumber API [Jikan](https://jikan.moe/)

@@ -1,8 +1,13 @@
+// Import Bootstrap
+import bootstrap from 'bootstrap';
+
+// Import runtime
+import 'regenerator-runtime';
+
 // Import our custom CSS
 import './style/scss/style.scss'
 
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+// main
+import main from "./script/view/main.js";
 
-const sayHello = () => document.writeln("Hello World");
-// sayHello();
+document.addEventListener("DOMContentLoaded", main);
