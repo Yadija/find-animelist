@@ -5,7 +5,7 @@ class AppBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 fixed-top">
         <div class="container">
           <a class="navbar-brand text-light" href="#">Find AnimeList</a>
         </div>
