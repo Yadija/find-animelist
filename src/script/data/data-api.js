@@ -1,8 +1,11 @@
+// Import axios
+const axios = require('axios').default;
+
 class DataAPI {
   static searchAnime({search, genre}) {
-    return fetch(`https://api.jikan.moe/v4/${genre}?q=${search}&sfw=true`)
+    return axios.get(`https://api.jikan.moe/v4/${genre}?q=${search}&sfw=true`)
       .then((response) => {
-        return response.json();
+        return response.data;
       })
       .then((responseJson) => {
         if(responseJson.data) {
