@@ -2,7 +2,7 @@ class CardItem extends HTMLElement {
   set anime(anime) {
     this._anime = anime;
     this.render();
-  };
+  }
 
   render() {
     this.innerHTML = `
@@ -16,4 +16,4 @@ class CardItem extends HTMLElement {
   }
 }
 
-customElements.define("card-item", CardItem);
+customElements.define('card-item', CardItem);

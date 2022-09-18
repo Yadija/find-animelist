@@ -2,21 +2,18 @@
 const axios = require('axios').default;
 
 class DataAPI {
-  static searchAnime({search, genre}) {
+  static searchAnime({ search, genre }) {
     return axios.get(`https://api.jikan.moe/v4/${genre}?q=${search}&sfw=true`)
-      .then((response) => {
-        return response.data;
-      })
+      .then((response) => response.data)
       .then((responseJson) => {
-        if(responseJson.data) {
+        if (responseJson.data) {
           return Promise.resolve(responseJson.data);
-        } else {
-          return Promise.reject(`${keyword} is not found`)
         }
+        return Promise.reject(`${keyword} is not found`);
       })
       .catch((error) => {
         showResponseMessage(error);
-      })
+      });
   }
 }
 

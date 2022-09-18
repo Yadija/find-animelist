@@ -1,13 +1,10 @@
-// Import Bootstrap
-import bootstrap from 'bootstrap';
-
 // Import runtime
 import 'regenerator-runtime';
 
 // Import our custom CSS
-import './style/scss/style.scss'
+import './style/scss/style.scss';
 
 // main
-import main from "./script/view/main.js";
+import main from './script/view/main';
 
-document.addEventListener("DOMContentLoaded", main);
+document.addEventListener('DOMContentLoaded', main);
