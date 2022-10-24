@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable no-underscore-dangle */
 class SearchBar extends HTMLElement {
   connectedCallback() {
@@ -36,6 +37,9 @@ class SearchBar extends HTMLElement {
     `;
 
     this.querySelector('#searchButtonElement').addEventListener('click', this._clickEvent);
+    this.querySelector('#searchElement').addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') return this._clickEvent();
+    });
   }
 }
 
