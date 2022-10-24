@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 // data
 import DataAPI from '../data/data-api';
 
@@ -5,6 +6,7 @@ import DataAPI from '../data/data-api';
 import '../component/app-bar';
 import '../component/search-bar';
 import '../component/card-list';
+import '../component/footer-bar';
 
 const main = () => {
   const searchElement = document.querySelector('search-bar');

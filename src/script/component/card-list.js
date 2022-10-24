@@ -1,3 +1,6 @@
+/* eslint-disable consistent-return */
+/* eslint-disable no-return-assign */
+/* eslint-disable no-underscore-dangle */
 import './card-item';
 
 class CardList extends HTMLElement {

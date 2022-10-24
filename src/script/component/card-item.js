@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 class CardItem extends HTMLElement {
   set anime(anime) {
     this._anime = anime;
