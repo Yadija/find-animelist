@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 class CardItem extends HTMLElement {
   set anime(anime) {
     this._anime = anime;
@@ -8,7 +7,7 @@ class CardItem extends HTMLElement {
   render() {
     this.innerHTML = `
         <div class="card">
-          <img src="${this._anime.images.jpg.large_image_url}" class="card-img-top" alt="...">
+          <img src="${this._anime.images.jpg.large_image_url}" class="lazyload card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">${this._anime.title}</h5>
           </div>

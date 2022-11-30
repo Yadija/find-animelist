@@ -2,7 +2,7 @@
 import 'regenerator-runtime';
 
 // Import our custom CSS
-import './style/scss/style.scss';
+import './styles/scss/style.scss';
 
 // main
 import main from './script/view/main';

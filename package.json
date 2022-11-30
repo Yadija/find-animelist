@@ -1,11 +1,12 @@
 {
   "name": "find-animelist",
   "version": "1.0.0",
-  "description": "mencari anime berdasarkan judul",
+  "description": "Find Anime / Manga by search title",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack serve --config webpack.dev.js",
+    "serve": "http-server dist --port 9000",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix"
   },
@@ -28,6 +29,7 @@
     "favicons": "^7.0.2",
     "favicons-webpack-plugin": "^6.0.0-alpha.1",
     "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
     "postcss-loader": "^7.0.1",
     "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
@@ -41,6 +43,7 @@
     "@popperjs/core": "^2.11.6",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
+    "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.9"
   }
 }

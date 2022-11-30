@@ -1,6 +1,3 @@
-/* eslint-disable consistent-return */
-/* eslint-disable no-return-assign */
-/* eslint-disable no-underscore-dangle */
 import './card-item';
 
 class CardList extends HTMLElement {
@@ -11,7 +8,7 @@ class CardList extends HTMLElement {
 
   renderError(message) {
     this.innerHTML = '';
-    this.innerHTML = `<h2 class="alert alert-danger text-center">${message}</h2>`;
+    this.innerHTML = `<h2 class="alert alert-danger text-center">${message} is not found</h2>`;
   }
 
   render() {

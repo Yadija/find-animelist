@@ -1,5 +1,3 @@
-/* eslint-disable prefer-promise-reject-errors */
-/* eslint-disable no-undef */
 // Import axios
 const axios = require('axios').default;
 

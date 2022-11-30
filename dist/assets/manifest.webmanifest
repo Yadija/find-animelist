@@ -1,7 +1,7 @@
 {
   "name": "find-animelist",
   "short_name": "find-animelist",
-  "description": "mencari anime berdasarkan judul",
+  "description": "Find Anime / Manga by search title",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",

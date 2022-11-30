@@ -1,23 +1,28 @@
-/* eslint-disable no-use-before-define */
-// data
 import DataAPI from '../data/data-api';
 
-// component
-import '../component/app-bar';
-import '../component/search-bar';
-import '../component/card-list';
-import '../component/footer-bar';
+import '../components/app-bar';
+import '../components/search-bar';
+import '../components/card-list';
+import '../components/loading-indicator';
+import '../components/footer-bar';
 
 const main = () => {
   const searchElement = document.querySelector('search-bar');
   const animeListElement = document.querySelector('card-list');
+  const loadingIndicatorElement = document.querySelector('loading-indicator');
+
+  loadingIndicatorElement.style.display = 'none';
 
   const onButtonSearchClicked = async () => {
+    loadingIndicatorElement.style.display = 'block';
+
     try {
       const result = await DataAPI.searchAnime(searchElement.value);
       renderResult(result);
     } catch (message) {
       fallbackResult(message);
+    } finally {
+      loadingIndicatorElement.style.display = 'none';
     }
   };
 
