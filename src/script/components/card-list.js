@@ -6,6 +6,11 @@ class CardList extends HTMLElement {
     this.render();
   }
 
+  set clickEventById(event) {
+    this._clickEvent = event;
+    this.render();
+  }
+
   renderError(message) {
     this.innerHTML = '';
     this.innerHTML = `<h2 class="alert alert-danger text-center">${message} is not found</h2>`;
@@ -23,6 +28,13 @@ class CardList extends HTMLElement {
       cardItemElement.setAttribute('class', 'col-lg-3 col-md-4 col-6 mb-3');
       cardItemElement.anime = anime;
       this.appendChild(cardItemElement);
+    });
+
+    this.addEventListener('click', (event) => {
+      const { localName, dataset } = event.target;
+      if (localName === 'h5') {
+        this._clickEvent(dataset.id);
+      }
     });
   }
 }

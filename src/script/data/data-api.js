@@ -15,6 +15,13 @@ class DataAPI {
         showResponseMessage(error);
       });
   }
+
+  static searchAnimeById(id) {
+    return axios.get(`https://api.jikan.moe/v4/anime/${id}`)
+      .then((response) => response.data)
+      .then((responseJson) => responseJson.data)
+      .catch((error) => console.log(error));
+  }
 }
 
 export default DataAPI;

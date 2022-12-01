@@ -1,13 +1,13 @@
 {
   "name": "find-animelist",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Find Anime / Manga by search title",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack serve --config webpack.dev.js",
     "serve": "http-server dist --port 9000",
-    "lint": "eslint .",
+    "lint": "eslint ./src",
     "lint-fix": "eslint . --fix"
   },
   "keywords": [

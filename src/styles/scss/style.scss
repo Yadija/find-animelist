@@ -9,6 +9,19 @@ body {
   min-height: 100vh;
 }
 
+card-list {
+  card-item {
+    h5 {
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
+
 /* loading */
 .loading-indicator-overlay {
   background: rgba(0, 0, 0, 0.6);
